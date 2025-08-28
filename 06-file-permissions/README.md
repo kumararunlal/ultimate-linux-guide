@@ -43,6 +43,13 @@ chmod 755 filename  # User (rwx), Group (r-x), Others (r-x)
 chmod 644 filename  # User (rw-), Group (r--), Others (r--)
 chmod 700 filename  # User (rwx), No access for others
 ```
+##What Does 755 Actually Do?
+It sets permissions like this:
+
+Role	Permission	Meaning
+Owner	rwx (7)	Can read, write, and execute
+Group	r-x (5)	Can read and execute only
+Others	r-x (5)	Can read and execute only
 
 ## Changing Ownership with `chown`
 Modify file owner and group:
